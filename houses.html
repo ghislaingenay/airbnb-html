@@ -9,10 +9,10 @@
     <title>Houses</title>
   </head>
   <body>
+
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        
         <a class="navbar-brand" href="#">
           <img src="./images/logo-airbnb.png" alt="Airbnb logo" width="100px"/>
         </a>
@@ -43,7 +43,7 @@
           <!-- Filter - Number of rooms -->
           <div class="col col-lg-2 col-md-4 col-sm-12" >
             <div class="input-group">
-              <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+              <span class="input-group-text"><i class="fa-solid fa-house"></i></span>
               <select class="form-select" aria-label="Default select example">
                 <option selected>Any rooms</option>
                 <option value="1">1 room</option>
@@ -55,10 +55,31 @@
             </div>
           </div>
 
-        
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+          <!-- Filter - price -->
+        <div class="col col-lg-2 col-md-4 col-sm-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-dollar-sign"></i></span>
+            <input type="number" class="form-control" placeholder="max price" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+        <!-- Filter - sort  by price -->
+        <div class="col col-lg-2 col-md-4 col-sm-12">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-arrow-up-wide-short"></i></span>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Price (low to high)</option>
+              <option value="1">Price (low to high)</option>
+              <option value="2">Price (high to low)</option>
+
+            </select>
+          </div>
+        </div>
+
+        <!-- Filter - search input -->
+        <div class="col">
+          <input type="text" class="form-control" placeholder="House name..." aria-label="Username">
+        </div>
         <div class="col"></div>
         <div class="col"></div>
       </div>
